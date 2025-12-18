@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+<section id="loginPage">
+    <div class="login-box">
+        <h2>Login</h2>
+        <input id="username" placeholder="Username">
+        <input id="password" type="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+</section>
+
+<section id="dashboardPage" class="hidden">
+ <button id="modeToggle" class="toggle-mode" onclick="toggleMode()">☀️</button>
+    <h2>Dashboard</h2>
+
+    <div class="form">
+        <input id="custName" placeholder="Customer Name">
+        <input id="custPhone" placeholder="Phone">
+        <select id="custStatus">
+            <option>Active</option>
+            <option>Inactive</option>
+        </select>
+        <button onclick="addCustomer()">Add Customer</button>
+    </div>
+
+    <h3>Customer List</h3>
+    <ul id="custList"></ul>
+
+    <button onclick="logout()">Logout</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
